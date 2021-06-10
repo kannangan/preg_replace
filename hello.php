@@ -1,11 +1,6 @@
 <!DOCTYPE html>
-
 <html>
-
 <body>
-
-
-
 <?php
 
 ini_set('display_errors', '1');
@@ -23,8 +18,6 @@ class test {
         $this->template=$template;
 
     }
-
-
 
     public
 
@@ -58,11 +51,7 @@ class test {
 
 }
 
-
-
 $template = "Hi {greeting}, we've received your Order {ordernumber}, over {amount} pieces of {productname}";
-
-
 
 $data = [
 
@@ -78,8 +67,6 @@ $data = [
 
 ];
 
-
-
 $tr = new test ($template); // just creating instance of class and call resolve method.
 
 
@@ -90,11 +77,7 @@ try {
 
 } catch (Exception $e) {
 
-
-
 }
-
-
 
 echo $result;
 
